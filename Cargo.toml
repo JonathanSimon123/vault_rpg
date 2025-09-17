@@ -1,0 +1,18 @@
+[package]
+name = "vault_rpg"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+aes-gcm = "0.10"
+rand = "0.8"
+sha2 = "0.10"
+pbkdf2 = "0.12"
+base64 = "0.22.1"
+qrcode = "0.7"
+image = "0.25"
+clap = { version = "4.5.40", features = ["derive"] }
+
+[dependencies.totp-rs]
+version = "^5.3"
+features = ["qr"]
