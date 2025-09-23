@@ -16,26 +16,23 @@ Vault RPG is a command-line tool that combines a mnemonic vault with puzzle game
    ```bash
    cargo build
    ```
-
 2. **Configure TOTP (Optional)**
 
    For TOTP puzzle functionality, set environment variables:
+
    ```bash
    export VAULT_TOTP_SECRET="your_base32_secret_key"
    export VAULT_TOTP_ACCOUNT="your@email.com"  # Optional
    export VAULT_TOTP_ISSUER="YourService"      # Optional
    ```
-
 3. **Run the Project**
 
    ```bash
    cargo run
    ```
-
 4. **Create or Select a Vault**
 
    Follow the prompts to enter vault name, set mnemonic and master password.
-
 5. **Solve Puzzles and Unlock Vault**
 
    Complete puzzle challenges and enter master password to unlock mnemonics.
